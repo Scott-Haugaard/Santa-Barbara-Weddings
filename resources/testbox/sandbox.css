@@ -1,0 +1,199 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }    
+
+  /* Flower Box */
+
+  #flowerbox1 {
+    width: 100%;
+    height: 100px;
+    background-color: black; /* Set background color here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}  
+#flowerbox2 {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(246, 159, 242); /* Set background color here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#flowerbox3 {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(132, 83, 224); /* Set background color here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.border1 {
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ensure this matches the height of your border image */
+    background:
+        url('/resources/sandbox/flower3.png') 0 center / auto 75px repeat-x,
+        url('/resources/sandbox/flower3.png') 100px center / auto 75px repeat-x;
+    pointer-events: none;
+}
+.border2 {
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:
+        url('/resources/sandbox/flower4.png') 0 center / auto 75px repeat-x; /* Original image */
+    pointer-events: none;
+    position: relative;
+}
+.border2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 41px; /* Adjust this value for the overlap */
+    width: 100%;
+    height: 100px; 
+    background:
+        url('/resources/sandbox/flower4.png') center / auto 75px repeat-x; /* Rotated image */
+    transform: rotate(180deg); /* Rotate the image */
+    pointer-events: none;
+}
+.border3 {
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ensure this matches the height of your border image */
+    background:
+        url('/resources/sandbox/flower2.png') 0 center / auto 75px repeat-x,
+        url('/resources/sandbox/flower2.png') 50px center / auto 75px repeat-x;
+    pointer-events: none;
+}
+
+  /* Parallax */
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+.masktop {
+    width: 100%;
+    height: 20%; /* Adjusted height */
+    position: absolute;
+    background: url("/resources/sandbox/curve.svg") no-repeat;
+    background-size: contain;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.maskbtm {
+    width: 100%;
+    height: 20%; /* Adjusted height */
+    position: absolute;
+    background: url("/resources/sandbox/curve.svg") no-repeat;
+    background-size: contain;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+.parallax-caption {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.parallax-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.parallax-caption p {
+    font-size: 1.2rem;
+}
+.parallax-1 {
+    background-image: url('/resources/sandbox/sea-8808190_1920.jpg');
+}  
+
+/* Icons */
+.iconrow {
+    display: flex;
+    justify-content: space-between; 
+}
+.iconrow svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.iconrow2 {
+    display: flex;
+    justify-content: left !important;
+}
+
+/* Color Boxes */
+
+        .colorrow {
+            display: flex;
+        }
+        .colorblock {
+            width: 100px; 
+            height: 100px;
+            display: flex;
+            font-size: 1rem;
+            font-weight: bold;
+            align-items: center; /* Vertically centers the items */
+            justify-content: center; /* Horizontally centers the items */
+        }
+        .repeated-image-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .repeated-image-container img {
+                width: auto; /* Set the desired width */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+/* Boarders */        
+
+        .top-image {
+            background-image: url('/resources/sandbox/B-Lace-6b7e63.png');
+            background-repeat: repeat-x;
+            transform: rotate(180deg); /* Rotates the image 180 degrees */
+            width: 100%;
+            height: 150px; /* Adjust height as needed */
+        }
+        .bottom-image {
+            background-image: url('/resources/sandbox/B-Lace-37379c.png');
+            background-repeat: repeat-x;
+            width: 100%;
+            height: 150px; /* Adjust height as needed */
+        }
+        .center-image {
+            background-image: url('/resources/sandbox/B-Lace-cc74d4.png');
+            background-repeat: repeat-x;
+            width: 100%;
+            height: 110px; /* Adjust height as needed */
+        }
+        .color-block {
+            width: 100%;
+        }
+        .color-block-6b7e63 {
+            background-color: #6b7e63;
+            height: 30px;
+        }
+        .color-block-37379c {
+            background-color: #37379c;
+            height: 30px;
+        }
+        .white-space {
+            height: 30px; /* Adjust height as needed */
+            width: 100%;
+        }            
