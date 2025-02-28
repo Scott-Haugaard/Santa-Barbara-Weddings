@@ -93,6 +93,7 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.362);
     --cp10: #eff2ee;  /* var(--cp10)     Color Primary Tint */
     --cs00: #003366;  /* var(--cs00)     Color Secondary 100% */
     --cs10: #eaf3ff;  /* var(--cs10)     Color Secondary Tint */
+    --cs50: #93b7e5;  /* var(--cs50)     Color Secondary Tint */
     --ct00: #660033;  /* var(--ct00)     Color Tertiary 100% */
     --ct10: #660033;  /* var(--ct10)     Color Tertiary Tint */
     --ch00: #663300;  /* var(--ch10)     Color Highlight 100% */
@@ -158,52 +159,92 @@ fieldset {
 }
 h1 {
   font-family: "Tangerine", serif !important; 
-  color: #000;
+  color: var(--cs00);
   margin: 0 !important;
   padding: 0 !important;
-  font-size: 3rem !important;
+  font-size: 4rem !important;
   text-align: center !important;
   text-shadow: black 1px 1px 5px;
 }
-.head-text {
-  text-align: center;
-  margin-bottom: 2rem;
-}
 h2 {
   font-family: "Tangerine", serif !important; 
-  color: #000;
+  color: var(--cs00);
   margin: 0 !important;
   padding: 0 !important;
   font-size: 3rem !important;
   margin-top: 2rem !important;  
   text-align: center !important;
+  text-shadow: black 1px 1px 5px;
 }
-.page-links {
+h3 {
+  font-family: "Tangerine", serif !important; 
+  color: var(--cs00);
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 3rem !important;
+  margin-top: 2rem !important;  
+  text-align: center !important;
+  text-shadow: black 1px 1px 5px;
+}
+h4 {
+  font-family: "Tangerine", serif !important; 
+  color: var(--cs00);
+  margin: 0 !important;
+  margin-bottom: .5rem !important;
+  padding: 0 !important;
+  font-size: 2.5rem !important;
+  line-height: 80%;
+  text-align: Left !important;
+  text-shadow: black 1px 1px 5px;
+}
+.card-title {
+  font-family: "Tangerine", serif !important;
+  font-size: 2.5rem; 
+  color: var(--cs00);
+}
+.head-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.breadcrumb-active {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+ul.breadcrumb {
+  list-style: none;
   color: #000;
   font-weight: bold;
   margin-top: 2rem;  
   margin-bottom: 1rem;
 }
-.page-links a{
-  text-decoration: none;
-  color: black;
-}.page-links a:hover{
-  color: var(--ca0h);
+ul.breadcrumb li {
+  display: inline;
 }
-.page-links {
+ul.breadcrumb li+li:before {
+  padding: 8px;
   content: "\25CF";
-  color: darkgray; 
+  color: var(--cs50); 
 }
-.page-current {
-  text-decoration: underline !important;
-  text-decoration-thickness: 5px !important;
-  text-decoration-color: darkgray !important;
-
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: var(--cs50)
+}
+ul.breadcrumb .breadcrumb-active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: var(--cs50)
 }
 .navbar-brand { /* Navbar Title */
   font-family: "Tangerine", serif !important; 
   font-size: 2.5rem;
-  color: #000;
+  color:var(--cs00);
 }
 .w { /* Kern the W */
   letter-spacing: -.6rem !important;
@@ -226,7 +267,7 @@ h2 {
 .card-title {
   font-family: "Tangerine", serif !important;
   font-size: 2.5rem; 
-  color: #000;
+  color: var(--cs00);
 }
 .modal-title {
   font-family: "Tangerine", serif !important; 
